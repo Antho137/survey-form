@@ -1,0 +1,200 @@
+body {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #87CEEB;
+}
+
+.App {
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  color: #fff;
+  text-align: center;
+  background-color: #6A5ACD;
+}
+
+.title {
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+.description {
+  width: 80%;
+  font-size: 1em;
+  margin: 0 auto;
+  padding: 10px 0 15px;
+  color: #87CEEB;
+}
+
+.survey {
+  position: relative;
+  top: 140px;
+}
+
+.survey-form h3 {
+  color: #191970;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.general-info, .comment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.personal-info label {
+  display: block;
+  margin: 5px auto;
+}
+
+.personal-info input, select {
+  width: 280px;
+  height: 30px;
+  border: none;
+  padding: 0 10px;
+  border-radius: 4px;
+}
+
+.input-container {
+  margin-bottom: 15px;
+}
+
+.net-action {
+  padding: 0 30px;
+  margin: 20px 0;
+}
+
+.connected {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin: 10px 0 30px;
+}
+
+.connected label, .web-type label {
+  margin-left: 5px;
+}
+
+.inter-service h3 {
+  margin: 15px 0;
+}
+
+.web-type {
+  padding: 0 30px;
+  margin: 20px auto;
+}
+
+.web-interest h3 {
+  padding: 0 30px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.website div {
+  margin-bottom: 8px;  
+}
+
+.website {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.comment h3 {
+  margin-top: 0;
+  text-align: center;
+}
+
+textarea {
+  width: 80%;
+  height: 120px;
+  padding: 5px 10px;
+  font-size: 1.125em;
+  border-radius: 5px;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;  
+}
+
+.button {
+  width: 80%;
+  color: #fff;
+  border: none;
+  padding: 8px 0;
+  margin: 10px auto 30px;
+  border-radius: 5px;
+  background-color: #6A5ACD;
+}
+
+.error {
+  color: #ff0000;
+  font-size: .75rem;
+  margin: 2px 0 0;
+  padding: 0;
+}
+
+@media (min-width: 520px) {
+
+  .web-interest h3 {
+    padding: 0 40px;
+  }
+
+  .description {
+    width: 70%;
+  }
+
+  textarea, .button {
+    width: 60%;
+  }   
+} 
+
+@media (min-width: 820px) {
+
+  .general-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .personal-info {
+    padding: 0 20px;
+  }
+
+  .description {
+    width: 60%;
+  }
+} 
+
+@media (min-width: 1180px) {
+
+  .web-type {
+    width: 60%;
+  }
+
+  .description {
+    width: 50%;
+  }
+
+  textarea, .button {
+    width: 50%;
+  }  
+} 
